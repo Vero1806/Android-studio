@@ -63,12 +63,12 @@ fun MessageCard(msg: Message) {
         )
         Spacer(modifier = Modifier.width(8.dp))
 
-        Column {
-            Text(text = msg.author)
-            Text(text = msg.body)
+      //  Column {
+        //    Text(text = msg.author)
+          //  Text(text = msg.body)
 
 
-        }
+        //}
     }
 
 }
@@ -83,7 +83,7 @@ fun MessageCardAnswer(msg: Message) {
                 horizontalArrangement = Arrangement.End){
             Spacer(modifier = Modifier.width(100.dp))
 
-            Column  (Color.color){
+            Column {// (Color.color)
                 Text(text = msg.author)
                 Text(text = msg.body)
             }
