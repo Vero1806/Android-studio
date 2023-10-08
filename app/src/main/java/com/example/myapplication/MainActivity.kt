@@ -63,12 +63,10 @@ fun MessageCard(msg: Message) {
         )
         Spacer(modifier = Modifier.width(8.dp))
 
-      //  Column {
-        //    Text(text = msg.author)
-          //  Text(text = msg.body)
-
-
-        //}
+        Column {
+        Text(text = msg.author)
+        Text(text = msg.body)
+        }
     }
 
 }
@@ -90,8 +88,6 @@ fun MessageCardAnswer(msg: Message) {
         }
     }
 }
-// comentario dfe prueba
-
 
 @Preview (showBackground = true)
 @Composable
@@ -99,7 +95,7 @@ fun PreviewMessageCard(){
     MyApplicationTheme {
         Column {
             MessageCard(Message(author = "Él", body = "Estoy de broma" ))
-            Spacer(modifier = Modifier.height(50.dp))
+            Spacer(modifier = Modifier.height(3.dp))
             MessageCardAnswer(Message(author = "Yo", body = "Oki doki" ))
         }
     }
